@@ -98,7 +98,8 @@
       <div class="flex flex-col w-full md:space-y-4">
         <header class="z-40 flex items-center justify-between w-full h-16">
           <div class="block ml-6 lg:hidden">
-            <button onClick="navbarMenu()" class="flex items-center p-2 text-gray-500 bg-white rounded-full shadow text-md">
+            <button onClick="navbarMenu()"
+              class="flex items-center p-2 text-gray-500 bg-white rounded-full shadow text-md">
               <svg width="20" height="20" class="text-gray-400" fill="currentColor" viewBox="0 0 1792 1792"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -153,7 +154,7 @@
           </h2>
 
 
-          <div class="container max-w-3xl px-4 mx-auto sm:px-8">
+          <div class="container px-4 mx-auto sm:px-8">
             <div class="py-8">
               <div class="flex flex-row justify-between w-full mb-1 sm:mb-0">
                 <h2 class="text-2xl leading-tight">
@@ -182,19 +183,23 @@
                       <tr>
                         <th scope="col"
                           class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                          Nombre y Apellido
+                          Fecha
                         </th>
                         <th scope="col"
                           class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                          Email
+                          Categoria
                         </th>
                         <th scope="col"
                           class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                          Alta
+                          Detalle
                         </th>
                         <th scope="col"
                           class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
-                          Estado
+                          Monto
+                        </th>
+                        <th scope="col"
+                          class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                          Etiquetas
                         </th>
                         <th scope="col"
                           class="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
@@ -204,38 +209,259 @@
                     <tbody>
                       <tr>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <div class="flex items-center">
-                            <div class="flex-shrink-0">
-                              <a href="#" class="relative block">
-                                <img alt="profil" src="./images/person/8.jpg"
-                                  class="mx-auto object-cover rounded-full h-10 w-10 " />
-                              </a>
-                            </div>
-                            <div class="ml-3">
-                              <p class="text-gray-900 whitespace-no-wrap">
-                                Jean marc
-                              </p>
-                            </div>
-                          </div>
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            10/04/2021
+                          </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            admin@mail.com
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                gasto
+                              </span>
+                            </span>
                           </p>
                         </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Nueva pesas
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 1.200,32
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Fijo
+                              </span>
+                            </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Mensual
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                            Editar
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            11/04/2020
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-green-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                ingreso
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Pago del mes musculacion (Franco Jos)
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 1.200,32
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Variable
+                              </span>
+                            </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Pago único
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                            Editar
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            10/03/2020
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                gasto
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Pago del mes musculacion (Fede Das)
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 1.200,32
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Fijo
+                              </span>
+                            </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Mensual
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                            Editar
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            10/04/2021
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                gasto
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Pago de la luz
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 2.312,12
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Fijo
+                              </span>
+                            </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Pago único
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                            Editar
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
                             12/09/2020
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
-                            <span aria-hidden="true" class="absolute inset-0 bg-green-200 rounded-full opacity-50">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-green-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                ingreso
+                              </span>
                             </span>
-                            <span class="relative">
-                              activo
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Alquiler del local
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 2.122,00
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Variable
+                              </span>
                             </span>
-                          </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Mensual
+                              </span>
+                            </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Con TC
+                              </span>
+                            </span>
+                          </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -245,38 +471,48 @@
                       </tr>
                       <tr>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <div class="flex items-center">
-                            <div class="flex-shrink-0">
-                              <a href="#" class="relative block">
-                                <img alt="profil" src="./images/person/9.jpg"
-                                  class="mx-auto object-cover rounded-full h-10 w-10 " />
-                              </a>
-                            </div>
-                            <div class="ml-3">
-                              <p class="text-gray-900 whitespace-no-wrap">
-                                Marcus coco
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            designer@mail.com
+                            11/04/2020
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            01/10/2012
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                gasto
+                              </span>
+                            </span>
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
-                            <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Agua Provinciales
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 10.000,00
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Variable
+                              </span>
                             </span>
-                            <span class="relative">
-                              inactivo
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Mensual
+                              </span>
                             </span>
-                          </span>
+                          </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -286,38 +522,48 @@
                       </tr>
                       <tr>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <div class="flex items-center">
-                            <div class="flex-shrink-0">
-                              <a href="#" class="relative block">
-                                <img alt="profil" src="./images/person/10.jpg"
-                                  class="mx-auto object-cover rounded-full h-10 w-10 " />
-                              </a>
-                            </div>
-                            <div class="ml-3">
-                              <p class="text-gray-900 whitespace-no-wrap">
-                                Ecric marc
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            developer@mail.com
+                            10/03/2020
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            02/10/2018
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-green-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                ingreso
+                              </span>
+                            </span>
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
-                            <span aria-hidden="true" class="absolute inset-0 bg-green-200 rounded-full opacity-50">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Limpieza del gimnasio
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 12.100,20
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Fijo
+                              </span>
                             </span>
-                            <span class="relative">
-                              activo
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Pago único
+                              </span>
                             </span>
-                          </span>
+                          </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -327,38 +573,99 @@
                       </tr>
                       <tr>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <div class="flex items-center">
-                            <div class="flex-shrink-0">
-                              <a href="#" class="relative block">
-                                <img alt="profil" src="./images/person/6.jpg"
-                                  class="mx-auto object-cover rounded-full h-10 w-10 " />
-                              </a>
-                            </div>
-                            <div class="ml-3">
-                              <p class="text-gray-900 whitespace-no-wrap">
-                                Julien Huger
-                              </p>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            user@mail.com
+                            10/04/2021
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <p class="text-gray-900 whitespace-no-wrap">
-                            23/09/2010
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                gasto
+                              </span>
+                            </span>
                           </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
-                          <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
-                            <span aria-hidden="true" class="absolute inset-0 bg-green-200 rounded-full opacity-50">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Mantenimiento de maquinas de musculación
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 1.200,32
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Variable
+                              </span>
                             </span>
-                            <span class="relative">
-                              activo
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Mensual
+                              </span>
                             </span>
-                          </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <a href="#" class="text-indigo-600 hover:text-indigo-900">
+                            Editar
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            12/09/2020
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-red-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                gasto
+                              </span>
+                            </span>
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            Pago de la luz
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            $ 1.200,32
+                          </p>
+                        </td>
+                        <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                          <p class="text-gray-900 whitespace-no-wrap">
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Fijo
+                              </span>
+                            </span>
+                            <span class="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
+                              <span aria-hidden="true" class="absolute inset-0 bg-gray-200 rounded-full opacity-50">
+                              </span>
+                              <span class="relative">
+                                Mensual
+                              </span>
+                            </span>
+                          </p>
                         </td>
                         <td class="px-5 py-5 text-sm bg-white border-b border-gray-200">
                           <a href="#" class="text-indigo-600 hover:text-indigo-900">
@@ -430,7 +737,7 @@
                     </div>
                   </div>
                   <div class="text-xs text-gray-600 dark:text-gray-200">
-                    12/09/2020
+                    11/04/2020
                   </div>
                 </div>
               </li>
